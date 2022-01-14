@@ -1,0 +1,7 @@
+Data/
+ipynb_checkpoints/
+LSTM/.ipynb_checkpoints
+LSTM/__pycache__
+LSTM/Models
+Main_1.py
+App_1.py
