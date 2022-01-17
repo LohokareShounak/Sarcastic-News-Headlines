@@ -26,3 +26,9 @@ LSTM Model 3
 --Padding = NONE
 --Bidirectional = True (PS - Change Hidden Dim to 2*Hidden Dim in Linear Layer in Model.py)
 --Result = 68.04302251390028
+
+----Transformer Models----
+
+DistilBertForSequenceClassification
+--Result =>
+loss: 0.0275 - accuracy: 0.9909 - val_loss: 0.0316 - val_accuracy: 0.9912
