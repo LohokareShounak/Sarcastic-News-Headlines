@@ -29,6 +29,10 @@ LSTM Model 3
 
 ----Transformer Models----
 
-DistilBertForSequenceClassification
+DistilBertForSequenceClassification Tensorflow
 --Result =>
 loss: 0.0275 - accuracy: 0.9909 - val_loss: 0.0316 - val_accuracy: 0.9912
+
+DistilBertForSequenceClassification Pytorch
+--Result =>
+{'accuracy': 0.9740330160260272}, {'recall': 0.9692085953878407}, {'precision': 0.9741867509548268}, {'recall': 0.9692085953878407}
