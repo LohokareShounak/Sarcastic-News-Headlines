@@ -1,7 +1,7 @@
 import streamlit as st
-import torch
+#import torch
 from transformers import BertTokenizer, AutoModelForSequenceClassification
-
+import numpy as np
 
 def Predict_Page():
     st.title("Headlines these days trying to be funny aren't they?")
@@ -25,7 +25,7 @@ def Predict_Page():
         attention_mask = Text_Encode["attention_mask"]
         Output = Model(input_ids, attention_mask)
         print(Output)
-        preds = int(torch.argmax(Output.logits))
+        preds = int(np.argmax(Output.logits.detach()))
 
         if preds == 1:
             st.markdown("![Bazzinga](https://c.tenor.com/0d_WxNIZ6hEAAAAC/big-bang-theory-sheldon-cooper.gif)")
