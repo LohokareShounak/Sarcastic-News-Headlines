@@ -1,10 +1,8 @@
 import streamlit as st
-from transformers import DistilBertForSequenceClassification, BertTokenizer
 import torch
-def Load_Model():
-    file_path = r"Transformers/Models/Pytorch"
-    Model = DistilBertForSequenceClassification.from_pretrained(file_path)
-    return Model
+from transformers import BertTokenizer, AutoModelForSequenceClassification
+
+
 def Predict_Page():
     st.title("Headlines these days trying to be funny aren't they?")
 
@@ -15,9 +13,9 @@ def Predict_Page():
     headline = st.text_input("Headline", value = "")
 
     if len(headline) > 4:
-        Model = Load_Model()
-
         Tokenizer = BertTokenizer.from_pretrained("distilbert-base-uncased")
+
+        Model = AutoModelForSequenceClassification.from_pretrained("BlindMan820/Sarcastic-News-Headlines")  
 
         Text_Encode = Tokenizer.encode_plus(headline,
                         truncation = True,
