@@ -3,7 +3,7 @@ from transformers import TFDistilBertForSequenceClassification, DistilBertTokeni
 import streamlit as st
 import numpy
 def Load_Model():
-    file_path = r"C:/Users/shounak lohokare/Desktop/Python Basics/Project A/Transformers/Models/Tensorflow"
+    file_path = r"Transformers/Models/Tensorflow"
     Model = TFDistilBertForSequenceClassification.from_pretrained(file_path)
     return Model
 

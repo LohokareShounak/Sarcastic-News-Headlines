@@ -10,7 +10,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 
 print("Initialising Variables")
-DATA_LOC = r"C:\Users\shounak lohokare\Desktop\Python Basics\Project A\Data\Data.csv"
+DATA_LOC = r"Data/Data.csv"
 TOKENIZER = BertTokenizer.from_pretrained("distilbert-base-uncased")
 MODEL = DistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels = 2)
 BATCH_SIZE = 8

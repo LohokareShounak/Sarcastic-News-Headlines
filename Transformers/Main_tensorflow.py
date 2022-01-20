@@ -4,7 +4,7 @@ from transformers import TFDistilBertForSequenceClassification, DistilBertTokeni
 import pandas as pd
 import numpy as np
 
-DATA_LOC = r"C:\Users\shounak lohokare\Desktop\Python Basics\Project A\Data\Data.csv"
+DATA_LOC = r"Data/Data.csv"
 TOKENIZER = DistilBertTokenizer.from_pretrained("distilbert-base-uncased")
 MODEL = TFDistilBertForSequenceClassification.from_pretrained("distilbert-base-uncased", num_labels = 2)
 

@@ -2,7 +2,7 @@ import streamlit as st
 from transformers import DistilBertForSequenceClassification, BertTokenizer
 import torch
 def Load_Model():
-    file_path = r"C:/Users/shounak lohokare/Desktop/Python Basics/Project A/Transformers/Models/Pytorch"
+    file_path = r"Transformers/Models/Pytorch"
     Model = DistilBertForSequenceClassification.from_pretrained(file_path)
     return Model
 def Predict_Page():
