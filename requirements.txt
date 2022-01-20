@@ -1,4 +1,6 @@
+python==3.6
 numpy==1.21.4
 pandas==1.3.4
 streamlit
 transformers
+http://download.pytorch.org/whl/cpu/torch-0.4.1-cp36-cp36m-linux_x86_64.whl
